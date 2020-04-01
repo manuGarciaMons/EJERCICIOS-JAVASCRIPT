@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase String</title>
+</head>
+
+<body>
+
+  <script>
+    var frase;
+    frase = prompt('Ingrese una frase:', '');
+    var f;
+    for (f = 0; f < frase.length; f++) {
+      if (frase.charAt(f) == ' ') {
+        document.write('<br>');
+      }
+      else {
+        document.write(frase.charAt(f));
+      }
+    }
+  </script>
+</body>
+
+</html>

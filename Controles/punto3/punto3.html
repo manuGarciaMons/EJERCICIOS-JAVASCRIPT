@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controles</title>
+</head>
+
+<body>
+  <form>
+    <div>
+      Ingrese nombre:
+      <input type="text" id="nombre">
+    </div>
+    <br>
+    <div>
+      Ingrese apellido:
+      <input type="text" id="apellido">
+    </div>
+    <br>
+    <div>
+      <input type="button" value="Concatenar datos ingresados" onClick="concatenar()">
+    </div>
+    <br>
+    <input type="text" id="resultado">
+  </form>
+  <script>
+    function concatenar() {
+      var nom = document.getElementById('nombre').value;
+      var ape = document.getElementById('apellido').value;
+      document.getElementById('resultado').value = nom + ape;
+    }
+  </script>
+</body>
+
+</html>

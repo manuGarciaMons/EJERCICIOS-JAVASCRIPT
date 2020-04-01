@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase String</title>
+</head>
+
+<body>
+  <script>
+    var texto;
+    texto = prompt('Ingrese una palabra o frase:', '');
+    var cant = 0;
+    var f;
+    for (f = 0; f < texto.length; f++) {
+      if (texto.charAt(f) == texto.charAt(texto.length - 1 - f)) {
+        cant++;
+      }
+    }
+    if (cant == texto.length) {
+      document.write(texto + ' se lee igual en ambas direcciones');
+    }
+    else {
+      document.write(texto + ' no se lee igual en ambas direcciones');
+    }
+  </script>
+
+
+</body>
+
+</html>

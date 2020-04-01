@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase String</title>
+</head>
+
+<body>
+  <script>
+    var nombre;
+    var cant = 0;
+    do {
+      nombre = prompt('Ingrese uno o muchos nombre (Para Terminar ingrese la palabra "Fin"):', '');
+      cant++;
+    } while (nombre != 'Fin');
+    //para descontar la palabra Fin
+    cant--;
+    document.write('Se ingresaron ' + cant + ' palabras');
+  </script>
+</body>
+
+</html>

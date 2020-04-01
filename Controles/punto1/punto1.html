@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controles</title>
+</head>
+
+<body>
+
+  <form>
+    <div>
+      Ingrese un valor:
+      <input type="text" id="num">
+    </div>
+    <br>
+    <div>
+      <input type="button" value="Calcular cubo" onClick="calcularCubo()">
+    </div>
+  </form>
+  <script>
+    function calcularCubo() {
+      var v = document.getElementById('num').value;
+      v = parseInt(v);
+      var cubo = v * v * v;
+      alert(cubo);
+    }
+  </script>
+</body>
+
+</html>

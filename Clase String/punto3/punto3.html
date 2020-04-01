@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase String</title>
+</head>
+
+<body>
+  <script>
+    var frase;
+    frase = prompt('Ingrese una oración:', '');
+    document.write(frase + '<br><br>');
+    var palabra;
+    palabra = prompt('Ingrese la palabra a buscar:', '');
+    if (frase.indexOf(palabra) != -1) {
+      document.write('La frase ingresada contiene la palabra: ' + palabra);
+    }
+    else {
+      document.write('La frase ingresada no contiene la palabra: ' + palabra);
+    }
+  </script>
+
+</body>
+
+</html>
