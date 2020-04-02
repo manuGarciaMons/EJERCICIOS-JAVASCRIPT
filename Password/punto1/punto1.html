@@ -6,9 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password</title>
 </head>
-
+<!--
+  Disponer dos campos de texto tipo password.
+   Cuando se presione un botón mostrar si las dos claves ingresadas son iguales o no
+    (es muy común solicitar al operador el ingreso de dos 
+    veces de su clave para validar si la tecleó correctamente,
+     esto se hace cuando se crea una password para el ingreso 
+     a un sitio o para el cambio de una existente). 
+     Tener en cuenta que podemos emplear el operador ==
+      para ver si dos string son iguales.
+-->
 <body>
   <form>
+    <!-- solicitar clave dos veces -->
     <div>
       Ingrese clave:
       <input type="password" id="clave1">
@@ -20,18 +30,20 @@
     </div>
     <br>
     <div>
+      <!-- boton para verifficar clave
+      despliega el evento verificar cuando se da click-->
       <input type="button" value="Verificar clave" onClick="verificar()">
     </div>
   </form>
   <script type="text/javascript">
     function verificar() {
-      var clave1 = document.getElementById('clave1').value;
-      var clave2 = document.getElementById('clave2').value;
-      if (clave1 == clave2) {
-        alert('Las dos claves ingresadas son iguales');
+      var clave1 = document.getElementById('clave1').value; // traer datos del formulario
+      var clave2 = document.getElementById('clave2').value; // traer datos del formulario
+      if (clave1 == clave2) { // comparar si las claves son  iguales 
+        alert('Las dos claves ingresadas son iguales'); // si las claves son iguales 
       }
       else {
-        alert('Las dos claves ingresadas son distintas');
+        alert('Las dos claves ingresadas son distintas'); // si no son iguales
       }
     }
   </script>

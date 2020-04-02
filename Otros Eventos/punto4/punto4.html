@@ -6,26 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Otros Eventos</title>
 </head>
+<!-- 
+  9.1	Diseñar una página que tenga un hipervínculo. 
+  Cuando se presione dicho hipervínculo generar un valor aleatorio entre 0 y 2.
+   Si se genera el 0 llamar al webmail de hotmail, 
+   si se genera un 1 llamar a gmail en caso de generarse un 2 llamar a yahoo.
+Para generar un valor aleatorio utilizar la función random del objeto Math.
 
+
+-->
 <body>
 
   <script>
     function redireccionar() {
       var num;
-      num = Math.random() * 3;
-      num = parseInt(num);
-      if (num == 0) {
-        window.location = 'http://www.outlook.com';
+      num = Math.random() * 3; // crear un random sobre las posibles opciones
+      num = parseInt(num); // convertirno a entero
+      if (num == 0) { // validar si opcion es 0
+        window.location = 'http://www.outlook.com'; // redirige a outlook
       }
-      if (num == 1) {
-        window.location = 'http://www.yahoo.com';
+      if (num == 1) { // validar si opcion es 1
+        window.location = 'http://www.yahoo.com'; // redirige a yahoo
       }
-      if (num == 2) {
-        window.location = 'http://www.gmail.com';
+      if (num == 2) { // validar si opcion es 2
+        window.location = 'http://www.gmail.com'; // redirige a gmail 
       }
     }
   </script>
-
+<!-- Disparar el evento -->
   <button onClick="redireccionar()">Redireccionar a un servidor de mail</button>
 </body>
 

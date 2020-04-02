@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otros Eventos</title>
 </head>
+<!--
+    Diseñar un programa que agrande el tamaño de la ventana del navegador y ocupe toda la pantalla.
+Ayuda: Diseñar una función que se dispare para el evento onLoad de la marca Body: 
+<body onLoad="redimensionar()">
+La función redimensionar debe llamar a la función resizeTo del objeto window: 
+window.resizeTo(640,480);
+Si ejecutamos esto, el tamaño de la ventana del navegador se redimensionará tomando como ancho el valor 640 y como alto 480.
+
+-->
 <body>
     <script language="javascript">
         function redimensionar(){
-         window.resizeTo(640,480);
+         window.resizeTo(640,480); // redimensionar el tamaño de la pantalla 
         }
        
        </script>
+       <!-- invocar el evento-->
        <a href="javascript:redimensionar()">Redimensionar</a>
 </body>
 </html>

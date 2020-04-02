@@ -6,19 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clase String</title>
 </head>
+<!--
+  2.7 – Codifique un programa que permita capturar una oración por teclado, 
+  luego mostrar cada palabra ingresada en una línea distinta.
+Por ejemplo si cargo:
+La mañana está fría.
+Debe aparecer:
+La
+mañana
+está
+fría
 
+-->
 <body>
 
   <script>
     var frase;
-    frase = prompt('Ingrese una frase:', '');
+    frase = prompt('Ingrese una frase:', ''); // se pide una frase
     var f;
-    for (f = 0; f < frase.length; f++) {
-      if (frase.charAt(f) == ' ') {
-        document.write('<br>');
+    for (f = 0; f < frase.length; f++) { // se itera hasta el tamaño de frase
+      if (frase.charAt(f) == ' ') { // se valida si existe espacio
+        document.write('<br>'); // por cada espacio se realiza un salto de linea
       }
       else {
-        document.write(frase.charAt(f));
+        document.write(frase.charAt(f)); // se muestra por pantalla
       }
     }
   </script>

@@ -6,16 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clase String</title>
 </head>
-
+<!--
+  Igual al anterior, pero que termine la aplicación 
+  sin contemplar mayúsculas ni minúsculas. Es decir que para salir se 
+  pueda teclear fin, Fin o FIN. 
+-->
 <body>
+  <!--
+    se realiza un script que por medio de un contador empieza a validar las palabras 
+    que son ingresadas por teclado y este itera por medio de un ciclo while hasta que encuentre la 
+    palabra Fin.
+    Al Final con la ayuda de el contador se imprime la cantidad de palabras que se ingresaron hasta que se 
+    ingreso la pañabra fin.
+  -->
   <script>
+    
     var nombre;
     var cant = 0;
     do {
       nombre = prompt('Ingrese un nombre (Terminar ingresando Fin):', '');
       cant++;
-      nombre = nombre.toUpperCase();
-    } while (nombre != 'FIN');
+      nombre = nombre.toUpperCase(); // toUpperCase permite que el programa no distinga entre mayusculas y minusculas
+    } while (nombre != 'FIN'); // se itera hasta que ingrese "fin","FIN", "Fin"...
     //para descontar la palabra Fin
     cant--;
     document.write('Se ingresaron ' + cant + ' palabras');

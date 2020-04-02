@@ -6,28 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clase String </title>
 </head>
-
+<!-- 
+  2.5 – Realizar un programa que permita capturar una dirección de mail 
+  e implementar una función que verifique si el String tiene cargado el caracter @. 
+-->
 <body>
   <script>
+    // se crea una funcion para validar si dentro de mail se encuentra un caracter @
     function verificarArroba(mail) {
       var cant = 0;
       var f;
-      for (f = 0; f < mail.length; f++) {
-        if (mail.charAt(f) == '@') {
+      for (f = 0; f < mail.length; f++) { // validar si dentro del tamaño de mail
+        if (mail.charAt(f) == '@') { // existe un caracter @
           cant++;
         }
       }
-      if (cant != 0) {
+      if (cant != 0) { // si hay caracteres @
         document.write('El mail ' + mail + ' tiene el caracter @');
       }
-      else {
+      else { // si no hay caracteres @
         document.write('El mail ' + mail + ' no tiene el caracter @');
       }
     }
 
     var mail;
-    mail = prompt('Ingrese un mail:', '');
-    verificarArroba(mail);
+    mail = prompt('Ingrese un mail:', ''); // se pide el email
+    verificarArroba(mail); // se llama a  la función
   </script>
 
 </body>

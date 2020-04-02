@@ -6,33 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Controles</title>
 </head>
-
 <body>
-
+<!--
+  4.2 - Capturar dos números en objetos de tipo text y al presionar un botón, mostrar el mayor.
+-->
   <body>
+    <h1>  Calcular numero mayor</h1>
     <form>
+      <!-- 
+        se piden dos datos para calcular el numero mayor 
+      -->
       <div>
         Ingrese primer valor:
-        <input type="text" id="num1">
+        <input type="number" id="num1">
       </div>
       <br>
       <div>
         Ingrese segundo valor:
-        <input type="text" id="num2">
+        <input type="number" id="num2">
       </div>
       <br>
+      <!--
+        boton, cuando se activa llama a la función mostrarMayor
+      -->
       <input type="button" value="mostrar mayor" onClick="mostrarMayor()">
     </form>
     <script>
       function mostrarMayor() {
-        var num1 = document.getElementById('num1').value;
-        var num2 = document.getElementById('num2').value;
-        num1 = parseInt(num1);
-        num2 = parseInt(num2);
-        if (num1 > num2) {
-          alert('El manor es ' + num1);
+        var num1 = document.getElementById('num1').value; // trae el valor de num1 del formulario
+        var num2 = document.getElementById('num2').value; // trae el valor de num2 del formulario
+        num1 = parseInt(num1); // se convierte a entero por si se agregan numeros decimales 
+        num2 = parseInt(num2); // se convierte a entero por si se agregan numeros decimales 
+        if (num1 > num2) { // se valida si el numero 1 es mayor que el numero dos 
+          alert('El manor es ' + num1); 
         }
-        else {
+        else { // si numero dos es mayor a numero 1
           alert('El mayor es ' + num2);
         }
       }

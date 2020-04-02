@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otros eventos </title>
+</head>
+<!--
+    11.2 - Diseñar un programa que cuando muestre la página, redimensione la 
+    ventana del navegador y la centre en la pantalla dejando
+     50 pixeles arriba, abajo, izquierda y derecha.
+Aca también tenemos que utilizar otra función del objeto window
+ llamada moveTo (desplaza la ventana del navegador
+  a una determinada fila y columna de la pantalla): 
+function redimensionar()
+  {
+  window.moveTo(50,50);
+  window.resizeTo(window.screen.width - ? ,window.screen.height - ?);
+}
+Qué valor debemos disponer en los signos de interrogación ? 
+
+-->
+<body>
+    <!-- desplegar eventos mediante botones-->
+    <button onclick="openWin()">Nueva Ventana</button>
+    <button onclick="resizeWin()">Resize Ventana</button>
+
+    <script>
+        var myWindow;
+
+        function openWin() {
+            myWindow = window.open("", "", "width=100, height=100"); // abrir una ventana con ciertas dimensiones
+        }
+
+
+        function resizeWin() {
+            window.moveTo(50, 50); // cambiar la posiciión de la ventana 
+            myWindow.resizeTo(window.screen.width - 50, window.screen.height - 50); // cambiar el tamaño
+            myWindow.focus();
+        }
+    </script>
+
+</body>
+
+</html>

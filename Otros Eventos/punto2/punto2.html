@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otros Eventos</title>
+</head>
+<!--
+  7.1	Diseñar una función que mueva la ventana a la coordenada
+   (20,20) cuando se cargue la página (la función que desplaza la
+    ventana del navegador a una determinada coordenada se llama moveTo y tiene dos
+     parámetros que indican la columna y la fila en pixeles.
+-->
+<body>
+<!-- botones que despliegan el evento-->
+<button onclick="openWin()">Abrir "myWindow"</button> 
+<button onclick="moveWin()">Mover "myWindow"</button>
+
+<script>
+var myWindow;
+
+function openWin() {
+  myWindow=window.open("", "Ventana", "width=200, height=100"); // tamaño de la ventana 
+  myWindow.document.write("<p>Esta es una ventana en la coordenada (20,20)</p>");
+}
+
+function moveWin() {
+  myWindow.moveTo(20, 20); // mover la ventana a 
+  myWindow.focus();
+}
+</script>
+</body>
+</html>

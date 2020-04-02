@@ -15,14 +15,14 @@
 
     function retornarPerimetro(lado) {
       var perimetro;
-      perimetro = lado * 4;
-      return perimetro;
+      perimetro = lado * 4; // se calcula el valor del permimetro y se guarda en la variable perimetro
+      return perimetro; // se retorna el perimetro
     }
 
     var lado;
-    lado = prompt('Ingrese la medida del lado de un cuadrado:', '');
-    lado = parseInt(lado);
-    document.write('El perímetro del cuadrado es:' + retornarPerimetro(lado));
+    lado = prompt('Ingrese la medida del lado de un cuadrado:', ''); // se pide el valor de un lado del cuadrado
+    lado = parseInt(lado); // se convierte a entero
+    document.write('El perímetro del cuadrado es:' + retornarPerimetro(lado)); // se muestra el resultado
   </script>
 </body>
 

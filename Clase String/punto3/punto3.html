@@ -6,19 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clase String</title>
 </head>
-
+<!--
+  – Realizar la búsqueda de un string clave en un string fuente. 
+  Se deberá ingresar una frase o texto (fuente) y luego la clave a buscar.
+   En caso de encontrarla, imprimir la posición, de lo contrario una leyenda.
+-->
 <body>
   <script>
     var frase;
-    frase = prompt('Ingrese una oración:', '');
-    document.write(frase + '<br><br>');
+    frase = prompt('Ingrese una oración:', ''); // se pide una oración por ventana emergente
+    document.write(frase + '<br><br>'); // se muestra
     var palabra;
-    palabra = prompt('Ingrese la palabra a buscar:', '');
-    if (frase.indexOf(palabra) != -1) {
-      document.write('La frase ingresada contiene la palabra: ' + palabra);
+    palabra = prompt('Ingrese la palabra a buscar:', ''); // se pide una palabra a buscar por ventana emergente
+    if (frase.indexOf(palabra) != -1) { // se valida si dentro de frase se encuentra la palabra 
+      document.write('La frase ingresada contiene la palabra: ' + palabra); // si la frase contiene la palabra
     }
     else {
-      document.write('La frase ingresada no contiene la palabra: ' + palabra);
+      document.write('La frase ingresada no contiene la palabra: ' + palabra); // si la frase no contienen la palabra
     }
   </script>
 

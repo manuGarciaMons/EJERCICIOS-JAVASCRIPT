@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password</title>
 </head>
-
+<!--
+  Solicitar que se ingrese el nombre y la clave de un usuario.
+   Mostrar una ventana de alerta si en la clave se ingresan menos de 7 caracteres o más de 20.
+-->
 <body>
   <form>
+    <!---
+      pedir nombre de usuario y contraseña por un formulario
+    -->
     <div>
       Ingrese nombre de usuario:
       <input type="text" id="usuario"><br>
@@ -19,13 +25,16 @@
       <input type="password" id="clave" onBlur="verificar(this)"><br>
     </div>
     <div>
+      <!--
+        Boton que despliega el evento de verificar la cantidad de caracteres de la clave 
+      -->
       <input type="button" value="confirmar">
     </div>
   </form>
   <script>
     function verificar(control) {
-      if (control.value.length < 7 || control.value.length > 20) {
-        alert('cantidad de caracteres no valido en la clave(deben ser entre 7-20 caracteres)');
+      if (control.value.length < 7 || control.value.length > 20) { // si el valor de la clave es menor a 1 y mayor a 20
+        alert('cantidad de caracteres no valido en la clave(deben ser entre 7-20 caracteres)'); // mensaje
       }
     }
   </script>

@@ -7,17 +7,27 @@
     <title>onMouseOver y onMouseOut </title>
     <meta charset="UTF-8">
 </head>
-
+<!--
+    De acuerdo a la guía en el numeral sobre Eventos,
+     tomar como referencia el ejemplo y modificar el segundo problema resuelto 
+     (las casillas de la tabla que cambian el color cuando ingresamos con el mouse) 
+     para permitir llamar mediante hipervínculos a distintos programas 
+     que administran Web-mail (gmail, hotmail y yahoo).
+-->
 <body>
 
     <script>
+        // agregar colores 
         function pintar(objeto, col) {
-            objeto.style.backgroundColor = col;
+            objeto.style.backgroundColor = col; 
         }
     </script>
 
     <table border="1">
         <tr>
+            <!-- aplicar onMouseOver
+            aplicar colores
+            Redireccionar a proveedores de servicios de correo electronico-->
             <td onMouseOver="pintar(this,'#ff0000')" onMouseOut="pintar(this,'#ffffff')">
                 <a href="http://www.outlook.com">Outlook</a>
             </td>

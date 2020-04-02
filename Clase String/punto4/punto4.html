@@ -6,22 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clase String</title>
 </head>
-
+<!--
+  2.4 – Ingresar una palabra o texto por teclado y determinar si es o no una palabra palíndromo. 
+  (Palabra que se lee de igual manera de adelante hacia atrás, que de atrás hacia delante). 
+-->
 <body>
   <script>
     var texto;
-    texto = prompt('Ingrese una palabra o frase:', '');
-    var cant = 0;
+    texto = prompt('Ingrese una palabra o frase:', ''); // se pide una palabra por pantalla o frase
+    var cant = 0; 
     var f;
-    for (f = 0; f < texto.length; f++) {
-      if (texto.charAt(f) == texto.charAt(texto.length - 1 - f)) {
+    for (f = 0; f < texto.length; f++) { // se valida el tamaño del texto
+      if (texto.charAt(f) == texto.charAt(texto.length - 1 - f)) {  // se valida si contiene las mismas palabras y si al reves se lee igual
         cant++;
       }
     }
-    if (cant == texto.length) {
+    if (cant == texto.length) { // si las letras son igual en ambos sentidos
       document.write(texto + ' se lee igual en ambas direcciones');
     }
-    else {
+    else { // no es palindromo
       document.write(texto + ' no se lee igual en ambas direcciones');
     }
   </script>

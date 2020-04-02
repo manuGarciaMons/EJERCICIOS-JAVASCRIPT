@@ -17,16 +17,16 @@
       var suma = 0;
       var valor;
       var f;
-      for (f = 1; f <= 5; f++) {
-        valor = prompt('Ingrese valor:', '');
-        valor = parseInt(valor);
-        suma = suma + valor;
+      for (f = 1; f <= 5; f++) { // de 1 hasta 5 
+        valor = prompt('Ingrese valor (Numero):', ''); // pedir valores
+        valor = parseInt(valor); // convertirlos a entero
+        suma = suma + valor; // sumarlos
       }
       return suma;
     }
 
-    var s = cargar5Valores();
-    document.write('La suma de los 5 valores es: ' + s);  
+    var s = cargar5Valores(); // llamar a la funcion cargar5Valores 
+    document.write('La suma de los 5 valores es: ' + s);  // mostrar valores 
   </script>
 </body>
 

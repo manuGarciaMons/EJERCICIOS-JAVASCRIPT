@@ -6,22 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Funciones</title>
 </head>
-
+<!-- 
+  1.3 - Desarrollar una función que retorne la cantidad de dígitos que tiene una variable entera positiva. 
+-->
 <body>
   <script>
-    //Desarrollar una función que retorne la cantidad de dígitos 
-    //que tiene una variable entera positiva de hasta 5 dígitos.
-
-    function cantDigitos(n) {
-      resultado = n.length;
-
-      return resultado;
-    }
     var valor;
-    valor = prompt('Ingrese un valor positivo:', '');
-    let valorCadena = valor.length;
-    console.log(valorCadena);
-    document.write(valorCadena);
+    valor = prompt('Ingrese un valor positivo:', ''); // se pide el numero por pantalla emergente
+    let valorCadena = valor.length; //  se evalua la cantidad de digitos de la variable valor y se almacena en la variable valorCadena
+    document.write(valorCadena); // se muestra por pantalla
   </script>
 </body>
 

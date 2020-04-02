@@ -5,17 +5,20 @@
     <title> El Objeto Window</title>
     <meta charset="UTF-8">
 </head>
-
+<!-- 8.1	Diseñar una página que permita abrir otra ventana cuando se presiona un botón.
+     Dicha ventana debe tener como ancho 600 pixeles y alto 300 pixeles,
+      y debe mostrar el menú y su barra de herramientas.-->
 <body>
 
     <script>
         function abrirVentana() {
-            var ventana = open('', '', 'width=600,height=300');
+            var ventana = open('', '', 'width=600,height=300'); // abrir la ventana y tamaño
         }
     </script>
 
     <form>
-        <input type="button" value="abrir ventana" onClick="abrirVentana()">
+        <!-- ejecutar el evento-->
+        <input type="button" value="abrir ventana" onClick="abrirVentana()"> 
     </form>
 </body>
 

@@ -6,15 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clase String</title>
 </head>
-
+<!--
+  2.1– Ingresar una serie de nombres por teclado hasta que se digite la palabra Fin,
+   y mostrar cuántos nombres se ingresaron.
+-->
 <body>
+  <!--
+    se realiza un script que por medio de un contador empieza a validar las palabras 
+    que son ingresadas por teclado y este itera por medio de un ciclo while hasta que encuentre la 
+    palabra Fin.
+    Al Final con la ayuda de el contador se imprime la cantidad de palabras que se ingresaron hasta que se 
+    ingreso la pañabra fin.
+  -->
   <script>
     var nombre;
     var cant = 0;
     do {
       nombre = prompt('Ingrese uno o muchos nombre (Para Terminar ingrese la palabra "Fin"):', '');
       cant++;
-    } while (nombre != 'Fin');
+    } while (nombre != 'Fin'); // el ciclo solo se rompre si, la palabra ingresada es exactamente "Fin", el programa distingue entre mayusculas y minusculas
     //para descontar la palabra Fin
     cant--;
     document.write('Se ingresaron ' + cant + ' palabras');

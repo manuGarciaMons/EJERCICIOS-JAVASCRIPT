@@ -12,11 +12,11 @@
   <script>
     //Elaborar una función que reciba tres enteros y retorne el promedio.
 
-    function promediar(x1, x2, x3) {
-      var promedio = (x1 + x2 + x3) / 3;
-      return promedio;
+    function promediar(x1, x2, x3) { 
+      var promedio = (x1 + x2 + x3) / 3; // hallar el promedio
+      return promedio; // retornar el valor de promedio 
     }
-
+    //pedir 2 numeros por ventana emergente 
     var valor1, valor2, valor3;
     valor1 = prompt('Ingrese primer valor:', '');
     valor1 = parseInt(valor1);
@@ -24,9 +24,12 @@
     valor2 = parseInt(valor2);
     valor3 = prompt('Ingrese tercer valor:', '');
     valor3 = parseInt(valor3);
+    // mostrar los datos ingresados
     document.write('Los tres valores ingresados son ' + valor1 + ' ' + valor2 + ' ' + valor3 + '<br>');
     var pro;
+    // llamar a la funcion promediar 
     pro = promediar(valor1, valor2, valor3);
+    // mostrar el primedio
     document.write('El promedio es :' + pro);
   </script>
 

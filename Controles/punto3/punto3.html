@@ -6,10 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Controles</title>
 </head>
-
+<!--
+  4.3 - Capturar un nombre y un apellido en dos text.
+   Al presionar un botón, concatenarlos y mostrarlos en un tercer text
+    (Tener en cuenta que podemos modificar la propiedad value de un objeto
+     TEXT cuando ocurre un evento).
+-->
 <body>
   <form>
     <div>
+      <!-- se pide el nombre y apellido/s por un formulario -->
       Ingrese nombre:
       <input type="text" id="nombre">
     </div>
@@ -20,16 +26,17 @@
     </div>
     <br>
     <div>
+      <!-- boton que al ser activado invoca a concatenar -->
       <input type="button" value="Concatenar datos ingresados" onClick="concatenar()">
     </div>
     <br>
-    <input type="text" id="resultado">
+    <input type="text" id="resultado"> <!-- se muestra resultado de concatenar nombre y apellido-->
   </form>
   <script>
     function concatenar() {
-      var nom = document.getElementById('nombre').value;
-      var ape = document.getElementById('apellido').value;
-      document.getElementById('resultado').value = nom + ape;
+      var nom = document.getElementById('nombre').value; // trae el valor de nombre del formulario
+      var ape = document.getElementById('apellido').value;  // trae el valor de apellido del formulario<
+      document.getElementById('resultado').value = nom + ape; // concatena nombre y apellido
     }
   </script>
 </body>

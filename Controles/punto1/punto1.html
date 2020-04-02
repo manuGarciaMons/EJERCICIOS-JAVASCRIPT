@@ -6,25 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Controles</title>
 </head>
+<!--
 
+  4.1 - Crear un programa que permita capturar un entero en un text y
+   al presionar un botón nos muestre dicho valor elevado al cubo (emplear la función alert).
+
+-->
 <body>
 
   <form>
     <div>
-      Ingrese un valor:
+      <!-- se pide el valor desde un formulario -->
+      Ingrese el valor al que desea calcularle el cubo:
       <input type="text" id="num">
     </div>
     <br>
     <div>
+      <!--
+        se crea un boton y se llama a la función calcularCubo
+      -->
       <input type="button" value="Calcular cubo" onClick="calcularCubo()">
     </div>
   </form>
   <script>
+
+    /*
+    función calcularCubo permite determinar el valor del cubo de un numero 
+    que viene de un formulario html
+    */
     function calcularCubo() {
-      var v = document.getElementById('num').value;
-      v = parseInt(v);
-      var cubo = v * v * v;
-      alert(cubo);
+      var v = document.getElementById('num').value; // se trae el valor del formulario 
+      v = parseInt(v); // se convierte a un entero
+      var cubo = v * v * v; // se halla el cubo 
+      alert(cubo); // se muestra con una ventana emergente el valor hallado
     }
   </script>
 </body>
